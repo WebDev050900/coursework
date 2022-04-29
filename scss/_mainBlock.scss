@@ -194,7 +194,7 @@ input {
   height: 100%;
   z-index: 15;
   @include flex(center,center,column);
-  background: linear-gradient(#75ff75, #a2ff61);
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   &__title {
     font-family: 'UniNeueLight', serif;
     font-size: 30px;
