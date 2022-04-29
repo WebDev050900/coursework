@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/mainIcon.png">
+    <title>CourseWork</title>
+</head>
+
+<body>
+    <div class="mainWrapper">
+        <div class="heroStart">
+            <div class="container">
+                <div class="startBlock">
+                    <h1 class="startBlock__title">Програмна реалізація елементів тренажера дистанційного курсу «Дискретна математика» з теми «Доведення комбінаторних тотожностей. Поліноміальна формула. Формула включень і виключень»
+                    </h1>
+                    <p class="startBlock__text">Розробив: <br> студент групи КН-41 Костяний Сергій</p>
+                    <button class=" startBlock__btn btn">Почати</button>
+                </div>
+            </div>
+        </div>
+        <div class="menuWrapper displayNone">
+            <div class="container">
+                <div class="menuBlock">
+                    <div class="menuBlock__item menuBlock__item--passive">
+                        <p class="menuBlock__text">Блок Теорія <br> <span class="menuBlock__text menuBlock__text--small">в розробці</span></p>
+                    </div>
+                    <div class="menuBlock__item" id="practice">
+                        <p class="menuBlock__text"> Блок Практика</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="practiceBlock displayNone">
+            <button disabled class="formulaBtn displayNone">Формула</button>
+            <!--TaskBlock-->
+            <div class="taskBlockWrapper displayNone">
+                <div class="taskBlock">
+                    <h3 class="taskBlock__title">Комбінаторна задача</h3>
+                    <p class="taskBlock__text">У хореографічному гуртку займаються 14 дівчат та 10 юнаків. <br> Скількома способами з них можна утворити 6 танцювальних пар?
+                    </p>
+                    <button class="closeTask btn" type="submit">Далі</button>
+                </div>
+            </div>
+            <!--Step1-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Шість пар можна утворити, якщо виконати три дії.
+                    </h3>
+                    <p class="step__text">Дія перша – обрати 6 дівчат, це можна зробити таким способом: </p>
+                    <form class="practiceForm" action="#" method="post">
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step1" value="0">
+                            <p>C <sub>6</sub> <sup>14</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step1" value="0">
+                            <p>C <sub>6</sub> <sup>6</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step1" value="1">
+                            <p>C <sub>14</sub> <sup>6</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step1" value="0">
+                            <p>C <sub>6</sub> <sup>3</sup></p>
+                        </label>
+                        <button id="btn1" class="answerBtn btn" type="button">
+                            Відповісти
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!--Step2-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Шість пар можна утворити, якщо виконати три дії.</h3>
+                    <p class="step__text">Дія друга – обрати 6 юнаків, це можна зробити таким способом: </p>
+                    <form class="practiceForm" action="#" method="post">
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step2" value="1">
+                            <p>C <sub>10</sub> <sup>6</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step2" value="0">
+                            <p>C <sub>6</sub> <sup>10</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step2" value="0">
+                            <p>C <sub>6</sub> <sup>3</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step2" value="0">
+                            <p>C <sub>3</sub> <sup>6</sup></p>
+                        </label>
+                        <button id="btn2" class="answerBtn btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step3-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Дія третя – утворити 6 пар з обраних дівчат та юнаків. Цю дію можна уявити так. Дівчата вишиковуються в шеренгу, а юнаки підходять до них. Таким чином, задача знаходження кількості способів виконання цієї дії зводиться до задачі обчислення кількості перестановок.</h3>
+                    <p class="step__text">Скільки перестановок буде отримано після виконання дії?</p>
+                    <form class="practiceForm" action="#" method="post">
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step3" value="0">
+                            <p>4!</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step3" value="0">
+                            <p>5!</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step3" value="0">
+                            <p>8!</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step3" value="1">
+                            <p>6!</p>
+                        </label>
+                        <button id="btn3" class="answerBtn btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step4-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Отже, усього способів утворити 6 пар дорівнює:</h3>
+                    <form class="practiceForm" action="#" method="post">
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step4" value="0">
+                            <p>4! C <sub>14</sub> <sup>6</sup> C <sub>10</sub> <sup>6</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step4" value="0">
+                            <p>6! C <sub>18</sub> <sup>8</sup> C <sub>10</sub> <sup>6</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step4" value="1">
+                            <p>6! C <sub>14</sub> <sup>6</sup> C <sub>10</sub> <sup>6</sup></p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step4" value="0">
+                            <p>4! C <sub>6</sub> <sup>14</sup> C <sub>6</sub> <sup>10</sup></p>
+                        </label>
+                        <button id="btn4" class="answerBtn btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step5-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Обчисліть 6! C <sub>14</sub> <sup>6</sup> C <sub>10</sub> <sup>6</sup> та введіть правильну відповідь до задачі</h3>
+                    <form class="practiceForm" action="#" method="post" onsubmit="false">
+                        <label>
+                            <input class="inputExcel inputExcel--6" type="text">
+                        </label>
+                        <button id="btn5" class="answerExcel btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step6-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Задача правило включення-виключення</h3>
+                    <p class="step__text">Умова: 20 студентів  складали іспит з дискретної математики, інформатики та програмування під час сесії. По 15 студентів вдало  склали кожен із іспитів. Дискретну математику та інформатику  склали 14, інформатику та програмування 13, програмування та дискретну математику 13. Скільки студентів  пішло  перескладати хоча б один іспит?
+                    </p>
+                        <form class="practiceForm" action="#" method="post" onsubmit="false">
+                            <button id="btn6" class="answerExcel btn" type="button">Далі</button>
+                        </form>
+                </div>
+            </div>
+            <!--Step7-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Позначимо множини студентів які здавали іспити з дисциплін як A - дискретна математика, B - інформатика, C - програмування.</h3>
+                    <p class="step__text step__text--small">Умова: 20 студентів  складали іспит з дискретної математики, інформатики та програмування під час сесії. По 15 студентів вдало  склали кожен із іспитів. Дискретну математику та інформатику  склали 14, інформатику та програмування 13, програмування та дискретну математику 13. Скільки студентів  пішло  перескладати хоча б один іспит?
+                    </p>
+                    <p class="step__text">Множини студентів які склали іспит |A| + |B| + |C| = </p>
+                    <img class="formulaTask2" src="./img/formula.png" alt="formulaImg">
+                    <form class="practiceForm" action="#" method="post">
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step7" value="1">
+                            <p>15+15+15</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step7" value="0">
+                            <p>14+13+13</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step7" value="0">
+                            <p>15+14+13</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step7" value="0">
+                            <p>13+14+15</p>
+                        </label>
+                        <button id="btn7" class="answerBtn btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step8-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Як позначається множина студентів які успішно здали іспит з дискретної математики та програмування?</h3>
+                    <p class="step__text step__text--small">Умова: 20 студентів  складали іспит з дискретної математики, інформатики та програмування під час сесії. По 15 студентів вдало  склали кожен із іспитів. Дискретну математику та інформатику  склали 14, інформатику та програмування 13, програмування та дискретну математику 13. Скільки студентів  пішло  перескладати хоча б один іспит?
+                    </p>
+                    <img class="formulaTask2" src="./img/formula.png" alt="formulaImg">
+                    <form class="practiceForm" action="#" method="post">
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step8" value="0">
+                            <p>	|A|∩|B| = 14</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step8" value="1">
+                            <p>	|A|∩|C| = 13</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step8" value="0">
+                            <p>	|B|∪|C| = 13</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step8" value="0">
+                            <p>	|C|∩|A| = 15</p>
+                        </label>
+                        <button id="btn8" class="answerBtn btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step9-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Загальна формула вирішення даної задачі має вигляд:</h3>
+                    <p class="step__text step__text--small">Умова: 20 студентів  складали іспит з дискретної математики, інформатики та програмування під час сесії. По 15 студентів вдало  склали кожен із іспитів. Дискретну математику та інформатику  склали 14, інформатику та програмування 13, програмування та дискретну математику 13. Скільки студентів  пішло  перескладати хоча б один іспит?
+                    </p>
+                    <img class="formulaTask2" src="./img/formula.png" alt="formulaImg">
+                    <form class="practiceForm" action="#" method="post">
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step9" value="1">
+                            <p>	|A|+|B|+|C| - |A|∩|B| - |A|∩|C| - |B|∩|C| + |A∩B∩C |</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step9" value="0">
+                            <p>		|A|-|B|+|C| + |A|∩|B| + |A|∩|C| - |B|∩|C| + |A∩B∩C |</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step9" value="0">
+                            <p>		|A|-|B|-|C| + |A|∩|B| + |A|∩|C| + |B|∩|C| - |A∩B∩C |</p>
+                        </label>
+                        <label class="practiceForm__label">
+                            <input type="radio" name="step9" value="0">
+                            <p>		|A|+|B|+|C| + |A|∩|B| + |A|∩|C| + |B|∩|C| + |A∩B∩C |</p>
+                        </label>
+                        <button id="btn9" class="answerBtn btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step10-->
+            <div class="practiceWrapper displayNone">
+                <div class="step">
+                    <h3 class="step__title">Обчисліть 	|A|+|B|+|C| - |A|∩|B| - |A|∩|C| - |B|∩|C| + |A∩B∩C | та введіть правильну відповідь до задачі</h3>
+                    <form class="practiceForm" action="#" method="post" onsubmit="false">
+                        <label>
+                            <input class="inputExcel inputExcel--6" type="text">
+                        </label>
+                        <button id="btn10" class="answerExcel btn" type="button">Відповісти</button>
+                    </form>
+                </div>
+            </div>
+            <!--Step11-->
+            <div class="practiceWrapper displayNone">
+                <div class="finishBlock">
+                    <h3 class="finishBlock__title">Завдання виконані успішно!!! <br>Дякую за роботу!!!</h3>
+                </div>
+            </div>
+            <div class="errorHero hidden">
+                <div class="errorDiv">
+                    <h2 class="errorDiv__title">Відповідь невірна!</h2>
+                    <p class="errorDiv__text">Будь-ласка повторість спробу.</p>
+                    <button id="closeError" class="errorDiv__btn" type="button">Продовжити</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/logic.js"></script>
+</body>
+
+</html>

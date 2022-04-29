@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'UniNeueLight';
+  src: url('../fonts/UniNeueLight/unineuelight.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/UniNeueLight/unineuelight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+  url('../fonts/UniNeueLight/unineuelight.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/UniNeueLight/unineuelight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+  url('../fonts/UniNeueLight/unineuelight.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/UniNeueLight/unineuelight.svg#unineuelight') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: 'Breadley Sans';
+  src: url('../fonts/Breadley-sans/BreadleySans-Regular.eot');
+  src: url('../fonts/Breadley-sans/BreadleySans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Breadley-sans/BreadleySans-Regular.woff2') format('woff2'),
+  url('../fonts/Breadley-sans/BreadleySans-Regular.woff') format('woff'),
+  url('../fonts/Breadley-sans/BreadleySans-Regular.ttf') format('truetype'),
+  url('../fonts/Breadley-sans/BreadleySans-Regular.svg#BreadleySans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

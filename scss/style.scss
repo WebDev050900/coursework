@@ -1,0 +1,11 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "./mixins";
+@import "./global";
+@import "./variables";
+@import "./fonts";
+@import "./startBlock";
+@import "./mainBlock";

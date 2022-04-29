@@ -1,0 +1,204 @@
+.menuWrapper {
+  position: relative;
+}
+.menuBlock {
+  padding-top: 50px;
+  height: 100%;
+  @include flex(center, center);
+  flex-direction: column;
+
+  &__item {
+    //border: 2px solid purple;
+    width: 400px;
+    height: 250px;
+    font-family: 'UniNeueLight', serif;
+    font-size: 25px;
+    font-weight: bold;
+    //background: linear-gradient(45deg, #9234ff, #ff3357);
+    border-radius: 20px;
+    @include flex();
+    position: relative;
+    background-image: radial-gradient(circle, #2bff62, #17ff78, #00ff8c, #00ff9d, #14fead, #00fdbc, #00fcc9, #00fad5, #00f7e3, #00f4ef, #00f0f8, #23ecff);
+    box-shadow: 15px 15px 5px 2px rgba(0, 0, 255, .2);
+
+    &--passive {
+      margin-bottom: 30px;
+      background-image: linear-gradient(to right top, #5ec2b5, #7bc9ba, #93d0c0, #a9d6c7, #beddd0, #bad7ca, #b7d2c5, #b3ccbf, #98b9a8, #7da792, #63947c, #488267);
+      box-shadow: 15px 15px 5px 2px rgba(0, 0, 255, .2);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    &--small{
+      font-size: 16px;
+    }
+  }
+}
+.practiceBlock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.practiceWrapper{
+  height: 100%;
+  width: 100%;
+}
+.taskBlockWrapper{
+  height: 100%;
+  width: 100%;
+}
+.taskBlock{
+  font-family: 'UniNeueLight', serif;
+  font-weight: bold;
+  color: black;
+  padding-top: 150px;
+  @include flex(center, center);
+  flex-direction: column;
+  &__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  &__text {
+    width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+.formulaBlock{
+  background: linear-gradient(#e66465, #9198e5);
+  position: absolute;
+  z-index: 10;
+}
+.showTask{
+  width: 200px;
+  height: 50px;
+  position:absolute;
+  right: 0;
+  top: 0;
+  font-family: 'UniNeueLight', serif;
+  color: black;
+  font-size: 20px;
+}
+
+.formulaBtn{
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  //background-color: red;
+  right: 0;
+  bottom: 52px;
+  font-family: 'UniNeueLight', serif;
+  color: black;
+  font-size: 20px;
+}
+.step {
+  width: 100%;
+  font-family: 'UniNeueLight', serif;
+  font-weight: bold;
+  color: black;
+  padding-top: 100px;
+  @include flex();
+  flex-direction: column;
+  &__title {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  &__text {
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    &--small{
+      font-size: 14px;
+    }
+  }
+}
+.closeTask{
+  font-family: 'UniNeueLight', serif;
+}
+.practiceForm {
+  @include  flex(space-around,center,column);
+  &__label {
+    width: 400px;
+    background: #b4ffa7;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 0;
+    @include flex(flex-start, center);
+  }
+}
+input {
+  margin:0 20px;
+}
+.answerBtn{
+}
+
+.hidden{
+  visibility: hidden;
+}
+.visible{
+  visibility: visible;
+}
+.inputExcel{
+  text-align: center;
+  background: #aa91d9;
+  opacity: 0.8;
+  width: 150px;
+  height: 30px;
+  color: black;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  &--6{
+    bottom: 49px;
+    left: 72px;
+  }
+  &--7{
+    top: 88px;
+    left: 201px;
+  }
+  &--8{
+    top: 86px;
+    left: 264px;
+  }
+  &--9{
+    top: 14px;
+    left: 236px;
+    width: 220px;
+  }
+  &--11{
+    left: 234px;
+    width: 285px;
+    top: 13px;
+  }
+  &--12{
+    top: 13px;
+    left: 234px;
+    width: 222px
+  }
+}
+.answerExcel{
+  &--skip{
+    bottom: 85px;
+  }
+}
+.finishBlock{
+  height: 100%;
+  z-index: 15;
+  @include flex(center,center,column);
+  background: linear-gradient(#75ff75, #a2ff61);
+  &__title {
+    font-family: 'UniNeueLight', serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
